@@ -1,4 +1,4 @@
-package com.example.almoxarifesystemmobile;
+package com.example.myapplication;
 
 import org.junit.Test;
 
