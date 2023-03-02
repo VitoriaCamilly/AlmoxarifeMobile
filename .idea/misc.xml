@@ -9,12 +9,13 @@
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_detalhes_produto.xml" value="0.33" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_entradas.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_history.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_perfil.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_perfil.xml" value="0.33" />
+        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_perfil_usuario.xml" value="0.2" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_realizar_devolucao.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_realizar_reserva.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/fragment_realizar_reserva.xml" value="0.33" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/frangment_pedidos.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/item_carrinho.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/produto_card.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/layout/produto_card.xml" value="0.5" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/vinicius_benner/Documents/GitHub/AlmoxarifeMobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
       </map>
