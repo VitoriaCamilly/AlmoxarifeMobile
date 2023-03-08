@@ -12,6 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/navigation_pedidos"
+        android:name="com.example.myapplication.ui.pedidos.PedidosFragment"
+        android:label="@string/title_pedidos" />
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.myapplication.ui.perfil.PerfilFragment"
+        android:label="@string/title_perfil" />
+    <fragment
         android:id="@+id/navigation_pesquisa"
         android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
         android:label="@string/title_pesquisa"
