@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private boolean sidebarOpen = false;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +35,16 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+
+                R.id.navigation_inicio, R.id.navigation_pesquisa, R.id.navigation_adicionar)
+
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
 
         Button sidebarButton = findViewById(R.id.sidebar_button);
         sidebarButton.setOnClickListener(new View.OnClickListener() {
