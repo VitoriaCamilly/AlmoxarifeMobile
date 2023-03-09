@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
@@ -19,6 +20,7 @@ import com.example.myapplication.databinding.FragmentHomeBinding;
 import com.example.myapplication.ui.model.Classificacao;
 import com.example.myapplication.ui.model.Produto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
@@ -26,34 +28,21 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
     private HomeAdapter homeAdapter;
-    private List<Produto> listaProdutos;
+    private ArrayList<Produto> listaProdutos;
+    private RecyclerView recyclerView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        RecyclerView recyclerView = findViewById(R.id.recyclerview);
-
-//        listaProdutos.add(new Produto(1, 1, "Primeiro Produto", new Classificacao(1, "primeira Classificacao")));
-//        listaProdutos.add(new Produto(1, 1, "Primeiro Produto", new Classificacao(1, "primeira Classificacao")));
-//        listaProdutos.add(new Produto(1, 1, "Primeiro Produto", new Classificacao(1, "primeira Classificacao")));
-//        listaProdutos.add(new Produto(1, 1, "Primeiro Produto", new Classificacao(1, "primeira Classificacao")));
-//        listaProdutos.add(new Produto(1, 1, "Primeiro Produto", new Classificacao(1, "primeira Classificacao")));
         listaProdutos.add(new Produto(1, 1, "Primeiro Produto", new Classificacao(1, "primeira Classificacao")));
+        recyclerView= view.findViewById(R.id.reciclerViewHome);
 
-        homeAdapter = new HomeAdapter(getContext(), listaProdutos, this);
-        return root;
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        recyclerView.setAdapter(homeAdapter);
+        return view;
     }
 
     @Override
