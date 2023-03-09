@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/emailAprovarSolic"
         android:layout_width="157dp"
         android:layout_height="51dp"
         android:text="TextView"
@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/dataAprovarSolic"
         android:layout_width="124dp"
         android:layout_height="51dp"
         android:text="TextView"
